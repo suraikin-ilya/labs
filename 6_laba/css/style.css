@@ -35,3 +35,206 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+body{
+    background-color: rgb(0, 137, 228);
+    overflow: hidden;
+}
+
+
+.fish__small img{
+    max-width: 50px;
+}
+
+.fish__1{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move{
+    0%{
+        left:400px;
+        top:250px;
+        opacity: 0.25;
+    }
+    25%{
+        left:400px;
+        top:300px;
+        opacity: 0.75;
+    }
+    50%{
+        left:300px;
+        top:400px;
+        transform: scale(0.5);
+    }
+    75%{
+        left:100px;
+        top:600px;
+        transform: rotate(10deg);
+    }
+    100%{
+        left:200px;
+        top:230px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.fish__2{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move2;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move2{
+    0%{
+        left:600px;
+        top:750px;
+        opacity: 0.75;
+    }
+    25%{
+        left:200px;
+        top:300px;
+        transform: scale(0.75);
+    }
+    50%{
+        transform: rotate(10deg);
+        left:900px;
+        top:700px;
+    }
+    75%{
+        left:1000px;
+        top:600px;
+        opacity: 0.35;
+    }
+    100%{
+        transform: rotate(-10deg);
+        left:1200px;
+        top:430px;
+        transform: scale(0.8);
+    }
+}
+
+.fish__3{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move3;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move3{
+    0%{
+        left:100px;
+        top:550px;
+        opacity: 0.15;
+        rotate: (15deg);
+    }
+    25%{
+        left:800px;
+        top:300px;
+        opacity: 0.25;
+        transform: scale(0.725);
+    }
+    50%{
+        transform: rotate(20deg);
+        left:200px;
+        top:700px;
+    }
+    75%{
+        left:900px;
+        top:600px;
+        opacity: 0.35;
+    }
+    100%{
+        transform: rotate(-10deg);
+        left:1400px;
+        top:230px;
+        opacity: 0.95;
+        transform: scale(1.1);
+    }
+}
+
+.fish__4{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move4;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move4{
+    0%{
+        right:-1000px;
+        top:250px;
+        opacity: 1;
+        rotate: (15deg);
+    }
+    25%{
+        right:-200px;
+        top:700px;
+        opacity: 0.25;
+        transform: scale(0.8);
+    }
+    50%{
+        transform: rotate(20deg);
+        right:-800px;
+        top:700px;
+    }
+    75%{
+        right: -1000px;
+        top: 150px;
+        opacity: 0.15;
+        transform: scale(0.8);
+    }
+    100%{
+        transform: rotate(-10deg);
+        right:-750px;
+        top:230px;
+        opacity: 0.95;
+    }
+}
+
+.fish__5{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move5;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move5{
+    0%{
+        left:1700px;
+        top:250px;
+        opacity: 0.75;
+        rotate: (15deg);
+    }
+    25%{
+        left:1000px;
+        top:300px;
+        opacity: 0.85;
+    }
+    50%{
+        transform: rotate(20deg);
+        left:1200px;
+        top:700px;
+        transform: scale(0.5);
+    }
+    75%{
+        left: 800px;
+        top:400px;
+        opacity: 0.35;
+    }
+    100%{
+        transform: rotate(-10deg);
+        left:200px;
+        top:230px;
+        opacity: 0.95;
+    }
+}
