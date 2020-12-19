@@ -41,11 +41,53 @@ body{
     overflow: hidden;
 }
 
+.header{
+    height: 100px;
+    width: 1920px;
+    position: fixed;
+    background-color:white;
+}
+.header__nav{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+.header a:hover{
+    box-shadow: 0px 3px 0 rgb(183, 0, 255);
+    transition-duration: 0.3s;
+}
+.header h1{
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-right: 100px;
+}
 
+.header span{
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    display: inline-block;
+    font-size: 30px;
+
+}
+.header a{
+    height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.zanovo{
+    border: 1px solid black;
+}
 .fish__small img{
     max-width: 50px;
 }
-
+.fish__medium img{
+    max-width: 100px;
+}
 .fish__1{
     position: relative;
     animation-iteration-count: 1;
@@ -113,10 +155,11 @@ body{
         opacity: 0.35;
     }
     100%{
-        transform: rotate(-10deg);
         left:1200px;
         top:430px;
-        transform: scale(0.8);
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate(10);
     }
 }
 
@@ -155,8 +198,9 @@ body{
         transform: rotate(-10deg);
         left:1400px;
         top:230px;
-        opacity: 0.95;
-        transform: scale(1.1);
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate(0);
     }
 }
 
@@ -196,7 +240,9 @@ body{
         transform: rotate(-10deg);
         right:-750px;
         top:230px;
-        opacity: 0.95;
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate(10);
     }
 }
 
@@ -232,9 +278,199 @@ body{
         opacity: 0.35;
     }
     100%{
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
         left:200px;
         top:230px;
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+.fish__6{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move6;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move6{
+    0%{
+        left:1400px;
+        top:750px;
+        opacity: 1.25;
+    }
+    25%{
+        left:600px;
+        top:400px;
         opacity: 0.95;
     }
+    50%{
+        left:200px;
+        top:300px;
+        transform: scale(0.5);
+    }
+    75%{
+        left:300px;
+        top:700px;
+        transform: rotate(10deg);
+    }
+    100%{
+        left:1200px;
+        top:630px;
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+}
+
+.fish__7{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move7;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move7{
+    0%{
+        left:1300px;
+        top:150px;
+        opacity: 1;
+    }
+    25%{
+        left:1200px;
+        top:300px;
+        opacity: 0.95;
+    }
+    50%{
+        left:100px;
+        top:400px;
+        transform: scale(0.5);
+    }
+    75%{
+        left:300px;
+        top:300px;
+        transform: rotate(10deg);
+        transform: scale(1);
+    }
+    100%{
+        left:200px;
+        top:430px;
+        transform: rotate(-10deg);
+        opacity: 1;
+    }
+}
+.fish__8{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move8;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move8{
+    0%{
+        left:300px;
+        top:100px;
+        opacity: 1;
+    }
+    25%{
+        left:400px;
+        top:500px;
+        opacity: 0.95;
+    }
+    50%{
+        left:100px;
+        top:400px;
+        transform: scale(0.5);
+    }
+    75%{
+        left:800px;
+        top:300px;
+        transform: rotate(10deg);
+        transform: scale(1);
+    }
+    100%{
+        left:1300px;
+        top:130px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.fish__9{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move9;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish__move9{
+    0%{
+        left:1300px;
+        top:300px;
+        opacity: 1;
+    }
+    25%{
+        left:800px;
+        top:300px;
+        opacity: 0.95;
+    }
+    50%{
+        left:100px;
+        top:500px;
+        transform: scale(0.5);
+    }
+    75%{
+        left:300px;
+        top:500px;
+        transform: rotate(10deg);
+        transform: scale(1);
+    }
+    100%{
+        left:200px;
+        top:830px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.fish__10{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move10;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes fish__move10{
+    0%{
+        left:1500px;
+        top:800px;
+        opacity: 1;
+    }
+    25%{
+        left:200px;
+        top:400px;
+        opacity: 0.55;
+    }
+    50%{
+        left:700px;
+        top:200px;
+        transform: scale(0.7);
+    }
+    75%{
+        left:230px;
+        top:450px;
+        transform: rotate(-10deg);
+        transform: scale(1);
+    }
+    100%{
+        left:550px;
+        top:930px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.popadanie{
+    display: none;
 }
