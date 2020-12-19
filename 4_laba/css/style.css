@@ -159,7 +159,6 @@ header span:nth-child(3){
 	letter-spacing: 0.13em;
 	text-transform: uppercase;
 	color: #161616;
-	
 }
 
 .banner__text{
@@ -603,6 +602,13 @@ header span:nth-child(3){
 	margin-bottom: 100px;
 }
 
+.header__burger{
+	display: none;
+}
+.header__menu{
+	display: none;
+}
+
 @media (max-width: 1300px){
 	.container{
 		padding: 0 5%;
@@ -677,8 +683,95 @@ header span:nth-child(3){
 		background-size: contain;
 		height: 505px;
 	}
+	header.active{
+		background: none;
+		background-color: #161616;
+		height: 568px;
+		}
+	.banner.active{
+		display: none;
+	}
+	.header__menu.active nav{
+		transition: all 0.3s ease 0s;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		display: block;
+		width: 300px;
+		text-align: center;
+		margin-bottom: 39px;
+	}
+	.header__menu li:nth-child(1){
+		margin-top: 109px;
+	}
+	.header__menu li{
+		margin-bottom: 39px;
+	}
+
 	header nav{
 		display: none;
+	}
+	.header__burger{
+		display: inline-block;
+		position: relative;
+		width: 24px;
+		height: 16px;
+		left: 90px;
+		bottom: 5px;
+	}
+	.header__menu.active{
+		display: block;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:after{
+		content: '';
+		background-color: #fff;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		border-radius: 2px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before{
+		content: '';
+		background-color: #fff;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		border-radius: 2px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 7px;
+	}
+	.header__burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 7px;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+	.header__burger span{
+		content: '';
+		background-color: #fff;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 7px;
+		border-radius: 2px;
+		transition: all 0.1s ease 0s;
 	}
 	.banner__text h2{
 		width: 265px;
