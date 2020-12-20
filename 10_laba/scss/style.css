@@ -71,6 +71,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.advantages__info h3, .feedback h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #007f97;
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .wrapper {
   padding: 0 20%;
 }
@@ -197,16 +207,6 @@ header span {
   margin-bottom: 100px;
 }
 
-.advantages__info h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 50px;
-  color: #007f97;
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .advantages__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +293,7 @@ header span {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 19px;
   color: #000000;
   padding-left: 20px;
@@ -301,18 +301,16 @@ header span {
           text-decoration-color: black;
 }
 
-.feedback {
-  margin-bottom: 100px;
+.feedback__item input:hover {
+  opacity: 0.8;
+  position: relative;
+  bottom: 5px;
+  -webkit-box-shadow: 2px 2px 0 black;
+          box-shadow: 2px 2px 0 black;
 }
 
-.feedback h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 50px;
-  color: #007f97;
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
+.feedback {
+  margin-bottom: 100px;
 }
 
 .feedback__item button {
