@@ -2,6 +2,23 @@
 
 $iz:75px;
 $col: #007f97; 
+$span: 20px;
+
+%zagolovok{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: $col;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@mixin fontz($f){
+    font-size: $f;
+}
+
+
 
 .wrapper{
     padding: 0 20%;
@@ -50,7 +67,7 @@ header{
     span{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 900;
-        font-size: 50px;
+        @include fontz(50px);
         display: block;
         text-transform: uppercase;
         text-shadow: 1px 2px 0 black;
@@ -92,7 +109,7 @@ header{
 .info__item{
     span{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 50px;
+        @include fontz(50px);
         font-weight: bold;
         color: $col;
         width: 160px;
@@ -110,13 +127,7 @@ header{
 .advantages__info{
     margin-bottom: 100px;
     h3{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        font-size: 50px;
-        color: $col;
-        display: block;
-        text-align: center;
-        margin-bottom: 50px;
+        @extend %zagolovok;
     }
 }
 
@@ -139,7 +150,7 @@ header{
     h4{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        @include fontz($span);
         color: $col;
         display: block;
         text-align: center;
@@ -149,7 +160,7 @@ header{
     p{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-size: 15px;
+        @include fontz(15px);
         color: $col;
         display: block;
         text-align: center;
@@ -189,25 +200,26 @@ header{
         font-family: Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        @include fontz($span);
         line-height: 19px;
         color: #000000;
         padding-left: 20px;
         text-decoration-color: black;
+        &:hover{
+            opacity: 0.8;
+            position: relative;
+            bottom: 5px;
+            box-shadow: 2px 2px 0 black;
+        }
     }
 }
 .feedback {
     margin-bottom: 100px;
         h5{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 50px;
-            color: $col;
-            display: block;
-            text-align: center;
-            margin-bottom: 50px;
+            @extend %zagolovok;
         }
 }
+
 .feedback__item {
     button{
         display: inline-block;
@@ -232,7 +244,7 @@ header{
         display: inline-block;
         color: $col;
         margin-bottom: 10px;
-        font-size: 20px;
+        @include fontz($span);
         text-shadow: none;
         text-align: right;
         position: relative;
@@ -246,7 +258,7 @@ header{
     span{
         padding-top: 50px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
+        @include fontz($span);
         display: block;
         width: 100px;
         margin: 0 auto;
