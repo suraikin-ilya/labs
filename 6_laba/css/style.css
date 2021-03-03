@@ -95,15 +95,25 @@ body{
     animation-name: fish__move;
     animation-duration: 10s;
     animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+.fish__1:hover{
+    position: relative;
+    animation-iteration-count: 1;
+    animation-name: fish__move;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
 }
 
 @keyframes fish__move{
-    0%{
+    100%{
         left:400px;
         top:250px;
         opacity: 0.25;
     }
-    25%{
+    75%{
         left:400px;
         top:300px;
         opacity: 0.75;
@@ -113,12 +123,12 @@ body{
         top:400px;
         transform: scale(0.5);
     }
-    75%{
+    25%{
         left:100px;
         top:600px;
         transform: rotate(10deg);
     }
-    100%{
+    00%{
         left:200px;
         top:230px;
         transform: rotate(0deg);
